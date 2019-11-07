@@ -4,12 +4,15 @@ import CardImage from './CardImage/CardImage';
 
 const Card = props =>{
      const {date, title, explanation, hdurl, url, } = props.data;
-     
+
+     //loading card data
+     if(!hdurl) return <h3 className="loading">Loading...</h3>
+
     return(
-        <section className="card">
+        <article className="card">
             <CardTitle title={title} date={date}/>
             <CardImage imgSrc={hdurl} title={title} />
-        </section>
+        </article>
     )
 }
 
