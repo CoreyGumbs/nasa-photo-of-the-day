@@ -8,3 +8,16 @@ export const MainHeader =  styled.header`
     display: flex;
     flex-flow: row wrap;
 `;
+
+export const HeaderContainer = styled.div`
+
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid green;
+
+`;
+
+
+export const HeaderLogo =  styled.div`
+    border: 1px solid red;
+`;
