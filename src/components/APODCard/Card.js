@@ -1,9 +1,12 @@
 import React from 'react';
+import CardTitle from './CardTitle/CardTitle';
 
-const Card = () =>{
+const Card = props =>{
+     const {date, title, explanation, hdurl, url, } = props.data;
+     
     return(
         <section className="card">
-            Card
+            <CardTitle title={title} />
         </section>
     )
 }

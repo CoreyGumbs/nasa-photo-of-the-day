@@ -5,19 +5,21 @@ import Card from './components/APODCard/Card';
 
 
 function App() {
-  const [apod, setApod] = useState([]);
+  const [apod, setApod] = useState('');
 
-  // useEffect(() => {
-  //   axios.get('https://api.nasa.gov/planetary/apod?api_key=BSWV1ZHzNOhKxaqol3ehAGQwcpuIQgNhseh9N4hJ')
-  //   .then(response => {
-  //     console.log(response.data);
-  //   })
-  // }, []);
+  useEffect(() => {
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=BSWV1ZHzNOhKxaqol3ehAGQwcpuIQgNhseh9N4hJ')
+    .then(response => {
+      setApod(response.data);
+    })
+    .catch( err => console.log(err))
+  }, []);
+
 
   return (
     <div className="App">
       <Header />  
-      <Card />
+      <Card data={apod} />
     </div>
   );
 }
