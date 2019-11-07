@@ -1,15 +1,16 @@
 import React from 'react';
 import Logo from './Logo';
 import HeaderTitle  from './HeaderTitle';
+import {MainHeader} from './HeaderStyles';
 
  const Header = () => {
      return(
-        <header className="header">
+        <MainHeader>
             <div className="header-container">
                 <Logo />
                 <HeaderTitle />
             </div>
-        </header>
+        </MainHeader>
      )
  }
 
