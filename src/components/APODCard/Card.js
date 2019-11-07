@@ -1,7 +1,7 @@
 import React from 'react';
 import CardTitle from './CardTitle/CardTitle';
 import CardImage from './CardImage/CardImage';
-
+import CardInfo from  './CardInfo/CardInfo';
 const Card = props =>{
      const {date, title, explanation, hdurl, url, } = props.data;
 
@@ -11,7 +11,8 @@ const Card = props =>{
     return(
         <article className="card">
             <CardTitle title={title} date={date}/>
-            <CardImage imgSrc={hdurl} title={title} />
+            <CardImage imgSrc={hdurl} title={title} url={url} />
+            <CardInfo explanation={explanation}/>
         </article>
     )
 }
