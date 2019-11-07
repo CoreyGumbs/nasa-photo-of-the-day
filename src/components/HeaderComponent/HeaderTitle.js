@@ -1,12 +1,12 @@
 import React from 'react';
-
+import {HeaderTitleContainer} from './StyledComponents/HeaderStyles';
 
 
 const HeaderTitle = () => {
     return(
-        <div className="header-title-container">
+        <HeaderTitleContainer>
             <h1 className="header-title">Space: The Final Frontier</h1>
-        </div>
+        </HeaderTitleContainer>
     )
 }
 
