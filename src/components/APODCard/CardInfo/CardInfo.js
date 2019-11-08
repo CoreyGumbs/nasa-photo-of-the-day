@@ -1,12 +1,13 @@
 import React from 'react';
+import {CardInfoContainer, CardInfoText } from '../StyledComponents/CardStyles';
 
 const CardInfo = props => {
     return(
-        <section className="card-info-container">
-            <p className="card-info-txt">
+        <CardInfoContainer>
+            <CardInfoText>
                 {props.explanation}
-            </p>
-        </section>
+            </CardInfoText>
+        </CardInfoContainer>
     )
 }
 

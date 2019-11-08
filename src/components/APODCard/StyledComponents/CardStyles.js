@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
+
 export const ContentContainer = styled.section`
     width: 70%;
     margin: 50px auto;
     padding: 0;
+`;
+
+export const LoadingComponent = styled.h3`
+    width: 50%;
+    margin: 25% auto;
+    font-size: 7rem;
 `;
 
 export const CardTitleContainer = styled.section`
@@ -24,7 +31,7 @@ export const CardTitleSubHeading = styled.h2`
 `;
 
 export const DatePickerContainer = styled.section`
-    margin: 50px 0 20px 0;
+    margin: 20px 0;
     padding: 10px 20px;
     background-color: #eee;
     border: 1px solid #777;
@@ -37,7 +44,6 @@ export const DatePickerContainer = styled.section`
 
 export const DatePickerText = styled.p`
     font-size: 1.5rem;
-    font-weight: bolder;
     padding: 0;
     color: #777;
 
@@ -71,5 +77,20 @@ export const CardImgSource = styled.p`
 export const CardImgSourceLink = styled.a`
     font-size: 2rem;
     text-decoration: none;
+`;
 
+
+export const CardInfoContainer =  styled.section`
+    width: 100%;
+    margin: 50px 0;
+    border: 1px solid #0B3C91;
+    border-radius: 10px;
+`;
+
+export const CardInfoText = styled.p`
+    padding: 20px 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 2;
+    color: #333;
 `;
