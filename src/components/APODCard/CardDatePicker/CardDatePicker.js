@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import DatePicker from 'react-datepicker';
-import {DatePickerContainer, DatePickerText } from '../StyledComponents/CardStyles';
-import 'react-datepicker/dist/react-datepicker.css';
+import {DatePickerContainer, DatePickerText, DatePickerInputContainer } from '../StyledComponents/CardStyles';
 
 
 const CardDatePicker = props => {
@@ -16,14 +15,16 @@ const CardDatePicker = props => {
     return (
         <DatePickerContainer>
 
-            <DatePickerText>Select A Date: </DatePickerText>
-            <DatePicker 
-                selected={startDate} 
-                maxDate={new Date()} 
-                dateFormat="MM/dd/yyyy"
-                withPortal 
-                onChange={date => dateHandler(date)}
-            />
+            <DatePickerText>For More Pictures, Select A Date: </DatePickerText>
+            <DatePickerInputContainer>
+                <DatePicker 
+                    selected={startDate} 
+                    maxDate={new Date()} 
+                    dateFormat="MM/dd/yyyy"
+                    withPortal 
+                    onChange={date => dateHandler(date)}
+                />
+            </DatePickerInputContainer>
         </DatePickerContainer>
     )
 }

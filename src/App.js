@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './components/HeaderComponent/Header';
 import Card from './components/APODCard/Card';
 import moment from 'moment';
+import 'react-datepicker/dist/react-datepicker.css';
 import GlobalStyle from './theme/globalStyle';
 import { Normalize } from 'styled-normalize'
 
