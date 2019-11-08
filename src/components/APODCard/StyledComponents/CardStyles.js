@@ -11,6 +11,7 @@ export const LoadingComponent = styled.h3`
     width: 50%;
     margin: 25% auto;
     font-size: 7rem;
+    color: #0B3C91;
 `;
 
 export const CardTitleContainer = styled.section`
