@@ -39,6 +39,6 @@ export const HeaderTitleContainer = styled.div`
 `;
 
 export const HeadingTitle = styled.h1`
-    font-size: 50px;
+    font-size: 5rem;
 `;
 

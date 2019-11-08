@@ -1,6 +1,6 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle} from 'styled-components';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
 
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
@@ -10,5 +10,9 @@ injectGlobal`
         font-family: 'Raleway', sans-serif;
     }
 
+`;
 
-`
+
+export default GlobalStyle;
+
+

@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './components/HeaderComponent/Header';
 import Card from './components/APODCard/Card';
 import moment from 'moment';
+import GlobalStyle from './theme/globalStyle';
 import { Normalize } from 'styled-normalize'
 
 
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <Normalize />
+      <GlobalStyle />
       <Header />  
       <Card data={apod}  addNewDate={addNewDate}/>
     </div>
