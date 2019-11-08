@@ -55,6 +55,21 @@ export const DatePickerInputContainer = styled.div`
 `;
 
 export const CardImageContainer =  styled.section`
+    width: 100%;
+`;
 
+export const CardImageOfDay = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+`;
+
+export const CardImgSource = styled.p`
+    font-size: 2rem;
+`;
+
+export const CardImgSourceLink = styled.a`
+    font-size: 2rem;
+    text-decoration: none;
 
 `;
