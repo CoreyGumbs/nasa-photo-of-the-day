@@ -1,11 +1,11 @@
 import React from 'react';
-import {HeaderTitleContainer} from './StyledComponents/HeaderStyles';
+import {HeaderTitleContainer, HeadingTitle} from './StyledComponents/HeaderStyles';
 
 
 const HeaderTitle = () => {
     return(
         <HeaderTitleContainer>
-            <h1 className="header-title">Space: The Final Frontier</h1>
+            <HeadingTitle>Space: Photo Of The Day</HeadingTitle>
         </HeaderTitleContainer>
     )
 }
