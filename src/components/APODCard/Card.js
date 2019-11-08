@@ -3,6 +3,7 @@ import CardTitle from './CardTitle/CardTitle';
 import CardDatePicker from './CardDatePicker/CardDatePicker';
 import CardImage from './CardImage/CardImage';
 import CardInfo from  './CardInfo/CardInfo';
+import {ContentContainer} from './StyledComponents/CardStyles';
 
 const Card = props =>{
     const {date, title, explanation, hdurl, url } = props.data;
@@ -11,12 +12,12 @@ const Card = props =>{
     if(!hdurl) return <h3 className="loading">Loading...</h3>
 
     return(
-        <article className="card">
+        <ContentContainer>
             <CardTitle title={title} date={date}/>
             <CardDatePicker addNewDate={props.addNewDate}/>
             <CardImage imgSrc={hdurl} title={title} url={url} />
             <CardInfo explanation={explanation}/>
-        </article>
+        </ContentContainer>
     )
 }
 

@@ -13,7 +13,7 @@ const CardDatePicker = props => {
     }
    
     return (
-        <div>
+        <section>
             Select A Date: 
             <DatePicker 
                 selected={startDate} 
@@ -22,7 +22,7 @@ const CardDatePicker = props => {
                 withPortal 
                 onChange={date => dateHandler(date)}
             />
-        </div>
+        </section>
     )
 }
 
