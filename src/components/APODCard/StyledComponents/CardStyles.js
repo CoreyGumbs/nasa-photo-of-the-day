@@ -4,7 +4,6 @@ export const ContentContainer = styled.section`
     width: 70%;
     margin: 50px auto;
     padding: 0;
-   
 `;
 
 export const CardTitleContainer = styled.section`
@@ -53,5 +52,9 @@ export const DatePickerInputContainer = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+`;
+
+export const CardImageContainer =  styled.section`
+
 
 `;
