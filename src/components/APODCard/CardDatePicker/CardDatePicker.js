@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import DatePicker from 'react-datepicker';
+import {DatePickerContainer, DatePickerText } from '../StyledComponents/CardStyles';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
@@ -13,8 +14,9 @@ const CardDatePicker = props => {
     }
    
     return (
-        <section>
-            Select A Date: 
+        <DatePickerContainer>
+
+            <DatePickerText>Select A Date: </DatePickerText>
             <DatePicker 
                 selected={startDate} 
                 maxDate={new Date()} 
@@ -22,7 +24,7 @@ const CardDatePicker = props => {
                 withPortal 
                 onChange={date => dateHandler(date)}
             />
-        </section>
+        </DatePickerContainer>
     )
 }
 

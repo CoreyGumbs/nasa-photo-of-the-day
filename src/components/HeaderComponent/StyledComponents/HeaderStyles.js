@@ -13,6 +13,7 @@ export const HeaderContainer = styled.div`
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
 `;
@@ -20,7 +21,6 @@ export const HeaderContainer = styled.div`
 export const HeaderLogoContainer =  styled.div`
     width: 50%;
     padding: 0;
-
 `;
 
 export const LogoImg = styled.img`
@@ -28,12 +28,11 @@ export const LogoImg = styled.img`
     padding: 0;
     width: 40%;
     height: 40%;
-
 `;
 
 export const HeaderTitleContainer = styled.div`
     width: 50%;    
-   
+    color: #666;
     display: flex;
     justify-content: flex-end;
 `;
