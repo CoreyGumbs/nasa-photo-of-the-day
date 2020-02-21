@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1310e039-937c-4bb5-bad5-4cd779e976b2/deploy-status)](https://app.netlify.com/sites/peaceful-ride-9a05c8/deploys)
+
 # Module Project: Component Side Effects- NASA APOD
 
 This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using one of the libraries you learn. 
